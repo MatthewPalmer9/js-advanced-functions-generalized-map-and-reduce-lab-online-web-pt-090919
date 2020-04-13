@@ -9,18 +9,18 @@ function map(sourceArray, fn){
 }
 
 function reduce(sourceArray, fn, startingPoint) {
-    let acc
-    let ind
+    let accumulator
+    let i
     
-    if (!!startingPt) {
-        acc = startingPt
-        ind = 0
+    if (!!startingPoint) {
+        accumulator = startingPoint
+        index = 0
     } else {
-        acc = fn(arr[0], arr[1])
-        ind = 2
+        accumulator = fn(sourceArray[0], sourceArray[1])
+        i = 2
     }
-    for(ind; ind < arr.length; ind++) {
-        acc = fn(acc, arr[ind])
+    for(i; i < sourceArray.length; i++) {
+        acc = fn(accumulator, sourceArray[i])
     }
-    return acc
+    return accumulator
 }
