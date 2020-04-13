@@ -1,5 +1,5 @@
 // Add your functions here
 
-function map(sourceArray, fn), function(a){
+function map(sourceArray, fn){
  
 }
