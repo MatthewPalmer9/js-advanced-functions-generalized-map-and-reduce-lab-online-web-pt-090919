@@ -2,5 +2,7 @@
 
 function map(sourceArray, fn){
  let mappedArray = [] 
- sourceArray.forEach(index => )
+ sourceArray.forEach(index => {
+   mappedArray.push(fn(index))
+ })
 }
