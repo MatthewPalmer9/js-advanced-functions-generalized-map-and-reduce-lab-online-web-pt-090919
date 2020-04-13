@@ -20,7 +20,7 @@ function reduce(sourceArray, fn, startingPoint) {
         i = 2
     }
     for(i; i < sourceArray.length; i++) {
-        acc = fn(accumulator, sourceArray[i])
+        accumulator = fn(accumulator, sourceArray[i])
     }
     return accumulator
 }
