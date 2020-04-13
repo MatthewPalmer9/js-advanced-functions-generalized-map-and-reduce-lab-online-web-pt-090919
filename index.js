@@ -5,4 +5,5 @@ function map(sourceArray, fn){
  sourceArray.forEach(index => {
    mappedArray.push(fn(index))
  })
+ return mappedArray
 }
