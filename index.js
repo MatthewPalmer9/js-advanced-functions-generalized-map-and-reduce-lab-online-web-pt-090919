@@ -9,5 +9,8 @@ function map(sourceArray, fn){
 }
 
 function reduce(sourceArray, startingPoint = 0){
-  
+  reduceFn = function(a, c){
+    return a + c
+  }
+  return sourceArray.reduce(reduceFn, startingPoint)
 }
