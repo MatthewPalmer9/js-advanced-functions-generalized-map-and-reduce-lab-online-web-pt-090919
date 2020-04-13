@@ -8,9 +8,19 @@ function map(sourceArray, fn){
  return mappedArray
 }
 
-function reduce(sourceArray, startingPoint = 0){
-  const reduceFn = function(a, c){
-    return a + c
-  }
-  return sourceArray.reduce(reduceFn, startingPoint)
+function reduce(sourceArray, fn, startingPoint) {
+    let acc
+    let ind
+    
+    if (!!startingPt) {
+        acc = startingPt
+        ind = 0
+    } else {
+        acc = fn(arr[0], arr[1])
+        ind = 2
+    }
+    for(ind; ind < arr.length; ind++) {
+        acc = fn(acc, arr[ind])
+    }
+    return acc
 }
