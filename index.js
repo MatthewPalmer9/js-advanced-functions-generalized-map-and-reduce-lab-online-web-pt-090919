@@ -7,3 +7,7 @@ function map(sourceArray, fn){
  })
  return mappedArray
 }
+
+function reduce(sourceArray, startingPoint = 0){
+  
+}
